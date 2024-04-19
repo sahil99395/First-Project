@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        /* CSS styles go here */
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for header */
+        header {
+            background-color: #3081e4;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Amazon Logo */
+        header img {
+            height: 45px;
+        }
+
+        /* Search Bar */
+        header input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 500px;
+            margin-right: 10px;
+        }
+
+        header button {
+            padding: 5px 10px;
+            background-color: #6cfb0d;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Navigation Links */
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Styling for image tiles section */
+        .image-tiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        /* Styling for individual image tiles */
+        .image-tile {
+            width: 50%; /* Adjust the width as needed */
+            padding: 10px; /* Increase padding for more space around the content */
+            margin-bottom: 30px; /* Increase margin between image tiles */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image-tile img {
+            height: 220px; /* Adjust the height as needed */
+            width: auto;
+            border-radius: 5px;
+        }
+
+        .image-tile h3 {
+            margin-top: 10px;
+        }
+
+        .image-tile p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Basic styling for footer */
+        footer {
+          background-color: #3081e4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Amazon Logo -->
+        <img src="logo.png" alt="Logo">
+        <!-- Search Bar -->
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Image Tile Section -->
+        <section class="image-tiles">
+            <!-- Image Tile 1 -->
+            <div class="image-tile">
+                <img src="image1.jpg" alt="Image 1">
+                <h3>Agro Practices</h3>
+                <p>helps in modern agricultural Practices</p>
+            </div>
+            <!-- Image Tile 2 -->
+            <div class="image-tile">
+                <img src="image2.jpg" alt="Image 2">
+                <h3>Crop-o-Meter</h3>
+                <p>help in finding suitabel crop</p>
+            </div>
+            <!-- Image Tile 3 -->
+            <div class="image-tile">
+                <img src="image3.jpg" alt="Image 3">
+                <h3>Government</h3>
+                <p>provides info about latest government schemes</p>
+            </div>
+            <div class="image-tile">
+              <img src="image4.jpg" alt="Image 4">
+              <h3>fertilezer/pesticide</h3>
+              <p>help in determining right amount of use</p>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <p>© all rights reserved</p>
+    </footer>
+</body>
+</html>
